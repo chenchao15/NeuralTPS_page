@@ -157,12 +157,10 @@
       <div class="column is-full-width">
         <!-- <div class="content has-text-centered"> -->
         <div style="text-align: center;">
-          <img src="./images/intro_orientedNormal.png" class="center" width="70%">
+          <img src="./figures/overview.png" class="center" width="70%">
         </div>
           <p style="font-size: large;">
-            We propose SHS-Net to estimate oriented normals directly from point clouds.
-            In contrast, previous studies usually achieve this process through a two-stage paradigm using different algorithms,
-            i.e., (1) unoriented normal estimation (e.g., PCA, AdaFit and HSurf-Net) and (2) normal orientation (e.g., MST, QPBO and ODP).
+            The overview of our method. (a) The upper branch learns parameterization by covering 3D points S generated from 2D samples U onto the sparse input P like a sheet. The lower branch generates denser 3D points G from 2D samples U′ to guide SDF learning. And the two branches share parameters. (b) We learn an SDF by sampling 3D queries Q and pulling them into Q′ to cover the sparse input P, and constrains signed distances at points in P.
           </p>
         </div>
       </div>
